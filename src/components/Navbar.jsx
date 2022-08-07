@@ -48,6 +48,7 @@ const Navbar = (props) => {
                 }}
               >
                 <Avatar src={USER.photoURL} />
+                {console.log("Phone Number: " + auth.currentUser.phoneNumber)}
               </li>
             ) : null}
           </div>
