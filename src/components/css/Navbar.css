@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(30, 30, 30);
+}
+
+.logo {
+  padding-top: 10px;
+  color: aliceblue;
+}
+
+span {
+  font-weight: bold;
+  color: #da4167;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style-type: none;
+  padding: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+.Login-SignUp-btn {
+  border-radius: 20px;
+  padding: 0.9em;
+  font-family: "Poppins", sans-serif;
+}
+
+.Login-SignUp-btn:hover {
+  background-color: #fe4a49;
+}
+
+.right-side {
+  display: flex;
+}
+
+.Username {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.pfp {
+  border-radius: 220px;
+  width: 50px;
+  height: 50px;
+}
+
+.Container {
+  position: fixed;
+  width: 200px;
+  height: 150px;
+  background: #fe4a49;
+  margin: auto;
+  border-radius: 12px;
+  top: 0;
+  bottom: 100;
+  left: 100;
+  right: 0;
+  padding: 1em;
+  margin-right: 10px;
+  margin-top: 25px;
+  border-color: #5d737e;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-backdrop {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+  padding: 1em;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  margin-top: 30px;
+}
