@@ -52,7 +52,6 @@ export default function Form() {
                 setEmail(e.target.value);
                 console.log(email);
               }}
-              // inputProps={{ className: classes.input }}
               id="outlined-basic"
               label="Email"
               variant="outlined"
