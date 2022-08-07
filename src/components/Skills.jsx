@@ -1,4 +1,7 @@
 import "./css/Skills.css";
+import Links from "./Links";
+import "./css/links.css";
+
 import React, {
   forwardRef,
   useImperativeHandle,
@@ -24,6 +27,7 @@ const pathVariants = {
 
 const Skills = forwardRef((props, ref) => {
   const [open, setOpen] = useState(false);
+  const LinksRef = useRef();
 
   useImperativeHandle(ref, () => {
     return {
@@ -36,7 +40,8 @@ const Skills = forwardRef((props, ref) => {
   });
 
   return (
-    <>
+    <div>
+      <Links ref={LinksRef}>Hey</Links>
       {open && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -181,16 +186,17 @@ const Skills = forwardRef((props, ref) => {
                 whileTap={{ scale: 1.0 }}
                 onClick={() => {
                   console.log("Clicked");
+                  LinksRef.current.Open();
                 }}
                 className="link-btn"
               >
-                Next
+                My Socials
               </motion.button>
             </motion.div>
           </motion.div>
         </motion.div>
       )}
-    </>
+    </div>
   );
 });
 
