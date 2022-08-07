@@ -1,9 +1,4 @@
-import React, {
-  forwardRef,
-  useImperativeHandle,
-  useState,
-  useRef,
-} from "react";
+import React, { useRef } from "react";
 import "./css/About.css";
 import { motion } from "framer-motion";
 import Skills from "./Skills";
