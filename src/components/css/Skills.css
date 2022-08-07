@@ -1,0 +1,76 @@
+.skills {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 50;
+  background-color: #5d737e;
+}
+
+#skills {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bar {
+  position: absolute;
+  top: 17%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.backends {
+  position: absolute;
+  border-radius: 12px;
+  background-color: white;
+  width: 20%;
+  margin-left: 54%;
+  margin-top: 11%;
+}
+
+.backends .content-2 ul {
+  padding: 2em;
+}
+
+.backends .content-2 ul li {
+  list-style-type: none;
+  padding: 2em;
+}
+
+.backends .content-2 h2 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.frontend {
+  position: absolute;
+  border-radius: 12px;
+  background-color: white;
+  width: 20%;
+  margin-left: 25%;
+  margin-top: 11%;
+}
+
+.frontend ul {
+  padding: 2em;
+}
+
+.frontend ul li {
+  list-style-type: none;
+  padding: 2em;
+}
+
+.frontend h2 {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.link-btn {
+  padding: 2em;
+  border-radius: 20px;
+  margin-left: 95%;
+  margin-top: 41%;
+}

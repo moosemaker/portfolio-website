@@ -1,8 +1,12 @@
-import React from "react";
+import React, {
+  forwardRef,
+  useImperativeHandle,
+  useState,
+  useRef,
+} from "react";
 import "./css/About.css";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { motion } from "framer-motion";
-import { style } from "@mui/system";
+import Skills from "./Skills";
 
 const pathVariants = {
   hidden: {
@@ -16,15 +20,15 @@ const pathVariants = {
       duration: 2,
       ease: "easeInOut",
     },
-    after: {},
   },
 };
 
 export default function About() {
-  const p = document.getElementById("logo");
-  console.log(p);
+  const skills = useRef();
+
   return (
     <div>
+      <Skills ref={skills}></Skills>
       <section className="hero">
         <div className="hero-text">
           <motion.svg
@@ -102,6 +106,9 @@ export default function About() {
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 1.0 }}
+              onClick={() => {
+                skills.current.Open();
+              }}
               className="next-btn"
             >
               Next
@@ -109,8 +116,6 @@ export default function About() {
           </motion.div>
         </div>
       </section>
-      <section className="skills">Hey</section>
-      <section className="links"></section>
     </div>
   );
 }

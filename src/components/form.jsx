@@ -8,7 +8,6 @@ import "./css/form.css";
 import { auth } from "../firebase";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 
 export default function Form() {
   const [email, setEmail] = useState("");
